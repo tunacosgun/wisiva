@@ -1,0 +1,512 @@
+/* ============================================
+   WISIVA ADMIN - PROFESSIONAL REDESIGN
+   ============================================ */
+
+/* --- Font Override --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.011em;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+}
+
+/* --- Selection --- */
+::selection {
+    background: rgba(37, 99, 235, 0.15);
+    color: #0F172A;
+}
+
+/* --- Sidebar --- */
+.wisiva-sidebar {
+    border-right: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.wisiva-sidebar .wisiva-sidebar-menu {
+    position: relative;
+    height: calc(100% - 52px);
+    background: linear-gradient(180deg, #0F172A 0%, #020617 100%) !important;
+}
+
+.wisiva-sidebar-header {
+    background: linear-gradient(180deg, #0F172A 0%, #0B1120 100%) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.wisiva-sidebar .wisiva-sidebar-menu .wisiva-sidebar-links .wisiva-sidebar-link a {
+    border-radius: 8px;
+    margin: 1px 8px;
+    padding: 9px 12px !important;
+    transition: all 0.15s ease;
+}
+
+.wisiva-sidebar .wisiva-sidebar-menu .wisiva-sidebar-links .wisiva-sidebar-link a:hover,
+.wisiva-sidebar .wisiva-sidebar-menu .wisiva-sidebar-links .wisiva-sidebar-link a.current {
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.wisiva-sidebar .wisiva-sidebar-menu .wisiva-sidebar-links .wisiva-sidebar-link .wisiva-sidebar-link-title {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.35);
+    padding: 16px 20px 6px;
+}
+
+/* --- Navbar --- */
+.wisiva-page-header {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+    box-shadow: none !important;
+}
+
+/* --- Dashboard Counter Cards --- */
+.bg-c-1 {
+    background: linear-gradient(135deg, #059669 0%, #10B981 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-2 {
+    background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-3 {
+    background: linear-gradient(135deg, #0891B2 0%, #06B6D4 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-4 {
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-5 {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-6 {
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-7 {
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-8 {
+    background: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-9 {
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-10 {
+    background: linear-gradient(135deg, #0D9488 0%, #14B8A6 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-11 {
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-12 {
+    background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%) !important;
+    border-radius: 14px !important;
+}
+
+.bg-c-13 {
+    background: linear-gradient(135deg, #C026D3 0%, #D946EF 100%) !important;
+    border-radius: 14px !important;
+}
+
+/* --- Cards --- */
+.card.h-100,
+.card {
+    background-color: #fff;
+    border-radius: 14px;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* --- Buttons --- */
+.btn {
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 500 !important;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    letter-spacing: -0.01em;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #2563EB, #1D4ED8) !important;
+    border: none !important;
+    box-shadow: 0 1px 3px rgba(37, 99, 235, 0.3) !important;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1D4ED8, #1E40AF) !important;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35) !important;
+}
+
+.btn-secondary {
+    border: 1.5px solid #E2E8F0 !important;
+    background: #fff !important;
+    color: #334155 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;
+}
+
+.btn-secondary:hover {
+    background: #F8FAFC !important;
+    border-color: #CBD5E1 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06) !important;
+}
+
+.btn-outline-primary {
+    border: 1.5px solid #2563EB !important;
+    color: #2563EB !important;
+}
+
+.btn-outline-primary:hover {
+    background: #2563EB !important;
+    color: #fff !important;
+}
+
+/* --- Forms --- */
+.form-control,
+.form-select {
+    border: 1.5px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    transition: all 0.2s ease !important;
+    font-size: 0.875rem !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.form-check-input:checked {
+    background-color: #2563EB !important;
+    border-color: #2563EB !important;
+}
+
+/* --- Tables --- */
+.wisiva-normal-table thead th,
+.wisiva-box-body table thead th {
+    background: #F8FAFC !important;
+    font-weight: 600 !important;
+    font-size: 0.75rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #64748B !important;
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.wisiva-normal-table tbody td,
+.wisiva-box-body table tbody td {
+    font-size: 0.875rem;
+    color: #334155;
+    vertical-align: middle;
+}
+
+/* --- Wisiva Box --- */
+.wisiva-box {
+    border-radius: 14px !important;
+    border: 1px solid #E2E8F0 !important;
+    background: #fff !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+}
+
+.wisiva-box .wisiva-box-head {
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.wisiva-box .wisiva-box-head .wisiva-box-head-title {
+    font-weight: 700 !important;
+    font-size: 0.9375rem !important;
+    color: #0F172A !important;
+    letter-spacing: -0.01em;
+}
+
+/* --- Counter Box --- */
+.wisiva-counter-box {
+    border-radius: 14px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06) !important;
+}
+
+.wisiva-counter-box .wisiva-counter-box-icon {
+    opacity: 0.2 !important;
+}
+
+/* --- Breadcrumb --- */
+.breadcrumb {
+    font-size: 0.8125rem !important;
+}
+
+.breadcrumb-item a {
+    color: #64748B !important;
+}
+
+.breadcrumb-item.active {
+    color: #94A3B8 !important;
+}
+
+/* --- Pagination --- */
+.page-item.active .page-link {
+    background: #2563EB !important;
+    border-color: #2563EB !important;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3) !important;
+    border-radius: 10px !important;
+}
+
+.page-link {
+    border-radius: 10px !important;
+    font-weight: 500 !important;
+    border: none !important;
+    color: #334155 !important;
+}
+
+/* --- Alerts --- */
+.alert {
+    border-radius: 12px !important;
+    border-left: 4px solid !important;
+}
+
+.alert-danger {
+    background: #FEF2F2 !important;
+    border-left-color: #EF4444 !important;
+}
+
+.alert-warning {
+    background: #FFFBEB !important;
+    border-left-color: #F59E0B !important;
+}
+
+.alert-success {
+    background: #F0FDF4 !important;
+    border-left-color: #22C55E !important;
+}
+
+.alert-info {
+    background: #F0F9FF !important;
+    border-left-color: #0EA5E9 !important;
+}
+
+/* --- Dropdown --- */
+.dropdown-menu {
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.07) !important;
+    padding: 6px !important;
+}
+
+.dropdown-item {
+    border-radius: 8px !important;
+    font-size: 0.875rem !important;
+    padding: 8px 14px !important;
+    transition: all 0.15s ease;
+}
+
+.dropdown-item:hover {
+    background: #F1F5F9 !important;
+}
+
+.dropdown-item.active {
+    background: rgba(37, 99, 235, 0.08) !important;
+    color: #2563EB !important;
+}
+
+/* --- Modal --- */
+.modal-content {
+    border-radius: 16px !important;
+    border: none !important;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #E2E8F0 !important;
+}
+
+.modal-footer {
+    border-top: 1px solid #E2E8F0 !important;
+}
+
+/* --- Badge --- */
+.badge {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 0.6875rem !important;
+    letter-spacing: 0.02em;
+}
+
+/* --- Notifications --- */
+.wisiva-page-header .wisiva-notifications .wisiva-notifications-menu {
+    border-radius: 14px !important;
+    border: 1px solid #E2E8F0 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* --- Auth / Sign In --- */
+.wisiva-sign-container {
+    background: linear-gradient(135deg, #F8FAFC, #EFF6FF) !important;
+}
+
+.wisiva-sign-form .card {
+    border-radius: 16px !important;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06) !important;
+    border: 1px solid #E2E8F0 !important;
+}
+
+/* --- DataTables --- */
+.dataTables_wrapper .dataTables_filter input {
+    border: 1.5px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+    padding: 8px 14px !important;
+    font-size: 0.875rem !important;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+    border-color: #2563EB !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+    outline: none !important;
+}
+
+/* --- Footer --- */
+footer {
+    border-top: 1px solid #E2E8F0 !important;
+    background: #fff !important;
+}
+
+/* --- Wisiva Divider --- */
+.wisiva-divider {
+    color: #94A3B8 !important;
+}
+
+.wisiva-divider::before,
+.wisiva-divider::after {
+    border-color: #E2E8F0 !important;
+}
+
+/* --- Error Card --- */
+.error-card {
+    border-radius: 16px !important;
+}
+
+.error-card .error-code {
+    background: linear-gradient(135deg, #2563EB, #7C3AED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+}
+
+/* --- Timeline --- */
+.wisiva-timeline::before {
+    background: #E2E8F0 !important;
+}
+
+/* --- Setting Items --- */
+.setting-item {
+    border-radius: 12px !important;
+    transition: all 0.2s ease;
+}
+
+.setting-item:hover {
+    background: #F8FAFC !important;
+}
+
+/* --- Notes --- */
+.wisiva-note {
+    border-radius: 12px !important;
+}
+
+/* --- Hide success outline button --- */
+a.btn.btn-outline-success.rounded-1 {
+    display: none;
+}
+
+/* --- Accordion --- */
+.accordion-item {
+    border-radius: 12px !important;
+    border: 1px solid #E2E8F0 !important;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.accordion-button {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #F8FAFC !important;
+    color: #2563EB !important;
+}
+
+/* --- Dropzone --- */
+.dropzone {
+    border: 2px dashed #CBD5E1 !important;
+    border-radius: 14px !important;
+    background: #F8FAFC !important;
+    transition: all 0.2s ease;
+}
+
+.dropzone:hover {
+    border-color: #2563EB !important;
+    background: #EFF6FF !important;
+}
+
+/* --- Bootstrap Select --- */
+.bootstrap-select .dropdown-toggle {
+    border: 1.5px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 1199.98px) {
+    .wisiva-sidebar.active {
+        box-shadow: 20px 0 60px rgba(0, 0, 0, 0.2) !important;
+    }
+}

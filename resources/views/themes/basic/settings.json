@@ -1,0 +1,528 @@
+{
+    "general": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Logo dark",
+            "name": "logo-dark",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_dark",
+            "value": "themes\/basic\/images\/logo-dark.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-dark",
+            "label": "Logo light",
+            "name": "logo-light",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "logo_light",
+            "value": "themes\/basic\/images\/logo-light.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Favicon",
+            "name": "favicon",
+            "description": "Allowed types (JPG,JPEG,PNG,ICO)",
+            "path": "images\/",
+            "key": "favicon",
+            "value": "themes\/basic\/images\/favicon.jpg",
+            "accept": ".jpg,.jpeg,.png,.ico",
+            "rule": [
+                "nullable",
+                "mimes:png,jpg,jpeg,ico"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Brand Icon",
+            "name": "brand",
+            "description": "Allowed types (JPG,JPEG,PNG)",
+            "path": "images\/",
+            "key": "brand",
+            "value": "themes\/basic\/images\/brand.jpg",
+            "accept": ".jpg,.jpeg,.png",
+            "rule": [
+                "nullable",
+                "mimes:png,jpg,jpeg"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Social Image",
+            "description": "Allowed types (JPG,JPEG)",
+            "path": "images\/",
+            "key": "social_image",
+            "value": "themes\/basic\/images\/F9HsWmufo7JqA70_1742280787.jpg",
+            "accept": ".jpg,.jpeg",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg"
+            ]
+        }
+    ],
+    "colors": [
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Primary Color",
+            "key": "primary_color",
+            "value": "#00c753",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Secondary Color",
+            "key": "secondary_color",
+            "value": "#15284b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Background Color",
+            "key": "background_color",
+            "value": "#F7F7F7",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Navbar Background Color",
+            "key": "navbar_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Premium Color",
+            "key": "premium_color",
+            "value": "#00c753",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Inner Background Color",
+            "key": "inner_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Elements Background Color",
+            "key": "elements_background_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Elements Inner Background Color",
+            "key": "elements_inner_background_color",
+            "value": "#f7f7f7",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Trending Item Badge Color",
+            "key": "trending_item_badge_color",
+            "value": "#39a9ff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Sale Item Badge Color",
+            "key": "sale_item_badge_color",
+            "value": "#00c753",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Free Item Badge Color",
+            "key": "free_item_badge_color",
+            "value": "#9629d1",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Premium Item Badge Color",
+            "key": "premium_item_badge_color",
+            "value": "#00c753",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Color",
+            "key": "text_color",
+            "value": "#15284b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Muted",
+            "key": "text_muted",
+            "value": "#4c5259",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Text Green",
+            "key": "text_green",
+            "value": "#27292b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Border Color",
+            "key": "border_color",
+            "value": "#ebebeb",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Item Preview Navbar Background",
+            "key": "item_preview_navbar_background",
+            "value": "#1d2734",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Background Color",
+            "key": "footer_background_color",
+            "value": "#15284b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Heading Color",
+            "key": "footer_heading_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Border Color",
+            "key": "footer_border_color",
+            "value": "#15284b",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        },
+        {
+            "col": "col-lg-4",
+            "field": "color",
+            "label": "Footer Text Color",
+            "key": "footer_text_color",
+            "value": "#ffffff",
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "regex:\/^#[A-Fa-f0-9]{6}$\/"
+            ]
+        }
+    ],
+    "home_page": [
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "square-large",
+            "box_bg": "bg-light",
+            "label": "Header Background",
+            "description": "Supported (JPEG, JPG, PNG, SVG, WEBP) Size 1920x700px.",
+            "path": "images\/home-page\/",
+            "key": "header_background",
+            "value": "themes\/basic\/images\/home-page\/Qkpa9qgPirxCJtV_1736434554.png",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "col": "col-12",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Header Background",
+            "description": "Supported (SVG) Size 1780x250.",
+            "path": "images\/pages\/",
+            "key": "header_background",
+            "value": "themes\/basic\/images\/pages\/p8IrQzjg2fdqMSi_1736507134.svg",
+            "accept": ".jpg,.jpeg,.png,.svg,.webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp",
+                "max:4096"
+            ]
+        }
+    ],
+    "footer": [
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Footer About",
+            "key": "footer_about",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "toggle",
+            "label": "Footer Payment Methods",
+            "key": "footer_payment_methods",
+            "value": 1,
+            "on": "Show",
+            "off": "Hide",
+            "required": false
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-dark",
+            "label": "Footer Logo",
+            "name": "footer-logo",
+            "description": "Allowed types (JPG,JPEG,PNG,SVG,WEBP)",
+            "path": "images\/",
+            "key": "footer_logo",
+            "value": "themes\/basic\/images\/footer-logo.png",
+            "accept": ".jpg,.jpeg,.png,.svg,webp",
+            "rule": [
+                "nullable",
+                "mimes:jpg,jpeg,png,svg,webp"
+            ]
+        },
+        {
+            "col": "col-lg-6",
+            "field": "image",
+            "box_type": "regular",
+            "box_bg": "bg-light",
+            "label": "Footer Payment Methods Logo",
+            "description": "Allowed types (JPG,JPEG,PNG)",
+            "path": "images\/",
+            "key": "footer_payment_methods_logo",
+            "value": "themes\/basic\/images\/jnPD8NcjKhyVbnU_1736496983.png",
+            "accept": ".jpg,.jpeg,.png",
+            "rule": [
+                "nullable",
+                "image",
+                "mimes:jpg,jpeg,png"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "About Content",
+            "key": "footer_about_content",
+            "value": "Yenilik\u00e7i ve g\u00fcvenilir yaz\u0131l\u0131m \u00e7\u00f6z\u00fcmleri sunarak i\u015fletmenizin dijital d\u00fcnyada b\u00fcy\u00fcmesine destek oluyoruz. M\u00fc\u015fteri odakl\u0131 hizmet anlay\u0131\u015f\u0131m\u0131z ve kaliteli \u00fcr\u00fcnlerimizle daima yan\u0131n\u0131zday\u0131z.\r\nHizmetlerimiz: Web yaz\u0131l\u0131m, mobil uygulamalar, \u00f6zel yaz\u0131l\u0131m \u00e7\u00f6z\u00fcmleri.",
+            "rows": 5,
+            "required": true,
+            "rule": [
+                "required",
+                "string",
+                "block_patterns",
+                "max:300"
+            ]
+        },
+        {
+            "col": "col-12 col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Items Sold",
+            "key": "footer_items_sold",
+            "value": "6983",
+            "required": false,
+            "rule": [
+                "nullable",
+                "integer",
+                "min:0"
+            ]
+        },
+        {
+            "col": "col-12 col-lg-6",
+            "field": "input",
+            "type": "number",
+            "label": "Sales Amount",
+            "key": "footer_sales_amount",
+            "value": "780754",
+            "required": false,
+            "rule": [
+                "nullable",
+                "integer",
+                "min:0"
+            ]
+        }
+    ],
+    "extra_codes": [
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Head Code",
+            "key": "head_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        },
+        {
+            "col": "col-12",
+            "field": "textarea",
+            "label": "Footer Code",
+            "key": "footer_code",
+            "value": null,
+            "rows": 10,
+            "required": false,
+            "rule": [
+                "nullable",
+                "string"
+            ]
+        }
+    ]
+}

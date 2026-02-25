@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Demo Paneli - Wisiva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://sc.demopaneli.com/themes/basic/images/favicon.jpg">
+    <style>
+        :root {
+            --primary-color: #15284b;
+            --secondary-color: #15284b;
+            --accent-color: #4c1d95;
+            --background-color: #f8fafc;
+            --text-color: #1e293b;
+            --card-shadow: 0 10px 30px -5px rgba(124, 58, 237, 0.1);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 1px 15px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 6rem 0 4rem;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .hero-section img {
+            max-width: 250px;
+            filter: brightness(0) invert(1);
+        }
+
+        .hero-section .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+            opacity: 0.5;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(124, 58, 237, 0.1);
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px -5px rgba(124, 58, 237, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(109, 40, 217, 0.1));
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover .feature-icon {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            transform: scale(1.1);
+        }
+
+        .credential-text {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            background: rgba(124, 58, 237, 0.1);
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .btn-demo {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            border: none;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            box-shadow: 0 10px 20px -5px rgba(124, 58, 237, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        .btn-demo:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            color: white;
+            box-shadow: 0 15px 25px -5px rgba(124, 58, 237, 0.4);
+        }
+
+        .section-title {
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 50%;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+            transform: translateX(-50%);
+        }
+
+        .qr-section {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .qr-code-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .qr-code-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(124, 58, 237, 0.05), rgba(109, 40, 217, 0.05));
+            z-index: 0;
+        }
+
+        .qr-code-container > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .qr-code-container img {
+            padding: 1rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: block;
+            margin: 0 auto;
+            max-width: 200px;
+            width: 100%;
+        }
+
+        .qr-code-container:hover {
+            transform: scale(1.02);
+        }
+
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+            opacity: 0.1;
+            margin: 4rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 5rem 0 3rem;
+            }
+            
+            .hero-section img {
+                max-width: 200px;
+            }
+            
+            .feature-card {
+                margin-bottom: 1.5rem;
+            }
+        }.hero-section {
+    background: linear-gradient(135deg, #15284b, #15284b);
+    padding: 3.8rem 0 3rem;
+}.btn-demo {
+    background: rgba(0, 199, 83)!important;
+}.feature-icon {
+    color: rgba(0, 199, 83)!important;
+    background: rgb(0 199 83 / 15%) !important;
+}.credential-text {
+    background: rgb(0 199 83 / 15%) !important;
+    color: rgba(0, 199, 83)!important;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center position-relative">
+            <img src="https://wisiva.demopaneli.com/12/themes/basic/images/logo-dark.png" alt="Wisiva Logo" class="mb-4">
+            <h1 class="display-4 fw-bold mb-4">Demo Paneli</h1>
+            <p class="lead mb-4">Wisiva'nın güçlü yönetim araçlarını keşfedin</p>
+        </div>
+    </section>
+
+    <!-- Panels Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Admin Panel Column -->
+                <div class="col-lg-12">
+                    <h2 class="text-center section-title">Bakımdayız</h2>
+                    <div class="feature-card">
+                        <div>
+                            <div class="feature-card text-center" style="box-shadow: none; border: 1px solid rgba(124, 58, 237, 0.1);">
+                                <div class="feature-icon">
+                                    <i class="fas fa-info-circle"></i>
+                                </div>
+                                <h3 class="h5 mb-3"> Wisiva</h3>
+                                <p class="mb-0">Yeni özelliklerin eklenmesi sebebi ile kısa süreli bakımdayız.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Courier Panel Column -->
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

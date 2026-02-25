@@ -1,0 +1,548 @@
+/* ============================================
+   WISIVA PAGE STYLES - PROFESSIONAL DESIGN
+   Content pages, integrations, SEO sections
+   ============================================ */
+
+/* --- Section Layout --- */
+.section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.section img {
+    max-width: 40%;
+    border-radius: 12px;
+}
+
+.section-content {
+    padding: 0px;
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.section h3 {
+    color: #0F172A;
+    margin: 0 0 10px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.section p {
+    color: #64748B;
+    line-height: 1.7;
+    font-size: 0.9375rem;
+}
+
+.section {
+    padding-top: 6px;
+}
+
+.highlight {
+    color: rgb(37, 99, 235);
+    font-weight: 700;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, rgb(37, 99, 235), rgb(29, 78, 216));
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(37, 99, 235, 0.25);
+}
+
+.button:hover {
+    background: linear-gradient(135deg, rgb(29, 78, 216), rgb(30, 64, 175));
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+    transform: translateY(-1px);
+    color: #fff;
+}
+
+/* --- Integration Section --- */
+#entegrasyon {
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+
+#entegrasyon h2 {
+    font-size: 1.875rem;
+    color: #0F172A;
+    margin-bottom: 10px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+#entegrasyon p {
+    font-size: 1rem;
+    color: #64748B;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+#entegrasyon .entegrasyon-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+#entegrasyon .entegrasyon-icons .entegrasyon-item {
+    width: 240px;
+    text-align: center;
+    background: #fff;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#entegrasyon .entegrasyon-icons .entegrasyon-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border-color: #CBD5E1;
+}
+
+#entegrasyon .entegrasyon-icons .entegrasyon-item i {
+    font-size: 2rem;
+    color: rgb(37, 99, 235);
+    margin-bottom: 10px;
+}
+
+#entegrasyon .entegrasyon-icons .entegrasyon-item span {
+    font-size: 0.9375rem;
+    color: #334155;
+    display: block;
+    font-weight: 600;
+}
+
+section#entegrasyon {
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 20px;
+}
+
+section#entegrasyon p:after {
+    content: "";
+    display: block;
+    background: linear-gradient(135deg, rgb(37, 99, 235), rgb(29, 78, 216));
+    height: 4px;
+    width: 60px;
+    margin-top: 12px;
+    border-radius: 100px;
+    margin-bottom: 35px;
+}
+
+/* --- Integration Details --- */
+div#entegrasyon-ozellikler {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div#entegrasyon-ozellikler .section {
+    width: 49%;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 14px;
+    margin: 10px 0px;
+    padding: 24px;
+    transition: all 0.2s ease;
+    background: #fff;
+}
+
+div#entegrasyon-ozellikler .section:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.entegrasyon-all {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entegrasyon-detail {
+    width: 19%;
+    border: 1.5px solid #E2E8F0;
+    background: #ffffff;
+    padding: 14px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.entegrasyon-detail:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+}
+
+.entegrasyon-detail img {
+    width: 100% !important;
+    max-width: 100%;
+}
+
+/* --- Header Integration --- */
+#header-entegrasyon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header-entegrasyon h2 {
+    text-align: center;
+}
+
+#header-entegrasyon p {
+    text-align: center;
+}
+
+section#header-entegrasyon {
+    margin-top: 17px;
+    margin-bottom: 22px;
+}
+
+/* --- Dashboard Section --- */
+#dash {
+    width: 100%;
+    padding: 40px 24px;
+    background-color: #ffffff;
+    text-align: center;
+    border: 1.5px solid #E2E8F0;
+    border-radius: 14px;
+    height: 487px;
+    transition: all 0.2s ease;
+}
+
+#dash:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+#dash h2 {
+    text-align: start;
+    margin-bottom: 18px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0F172A;
+    letter-spacing: -0.02em;
+}
+
+#dash .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#dash .container ul {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-align: left;
+    margin: 0 auto 30px auto;
+    padding: 0;
+    max-width: 700px;
+    font-size: 0.9375rem;
+    color: #64748B;
+    line-height: 1.7;
+}
+
+#dash .container ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+#dash .container .cta-button {
+    padding: 10px 24px;
+    border-radius: 10px;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+#dash .container .cta-button:hover {
+    background: linear-gradient(135deg, rgb(37, 99, 235), rgb(29, 78, 216));
+}
+
+img.dash {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.cta-button {
+    display: block;
+    background: linear-gradient(135deg, rgb(37, 99, 235), rgb(29, 78, 216));
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+/* --- SEO Sections --- */
+.seo {
+    margin: 40px auto;
+    padding: 24px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.seo-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.seo-content {
+    flex: 1;
+}
+
+.seo-content strong {
+    font-weight: 700;
+    color: #0F172A;
+}
+
+.seo-content span {
+    color: rgb(37, 99, 235);
+    font-weight: 700;
+}
+
+.seo-content a {
+    color: rgb(37, 99, 235);
+    text-decoration: underline;
+    font-weight: 600;
+    text-underline-offset: 3px;
+}
+
+.seo-content a:hover {
+    text-decoration-thickness: 2px;
+}
+
+.seo-icon {
+    flex: 0 0 365px;
+    height: 200px;
+    text-align: center;
+}
+
+.seo-icon img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+}
+
+.seo-content ol {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.seo-content ol li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.seo-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+.seo-content ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.seo-content ul li img {
+    width: 60px;
+    height: auto;
+    margin-right: 12px;
+    border: 1.5px solid #E2E8F0;
+    padding: 8px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+
+.seo-content ul li img:hover {
+    border-color: #CBD5E1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.seo-content h1 span,
+.seo-content h2 {
+    color: #0F172A;
+}
+
+.seo-content h1 span {
+    color: rgb(37, 99, 235);
+}
+
+.seo-content h1 {
+    font-weight: 800;
+    text-align: start;
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    font-weight: 800;
+    letter-spacing: -0.025em;
+}
+
+.package h3 {
+    color: #0F172A;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+/* --- E-commerce Services Section --- */
+section#header-ecommerce {
+    width: 100%;
+}
+
+section#ecommerce-services {
+    background: linear-gradient(135deg, rgb(37, 99, 235), rgb(29, 78, 216)) !important;
+    color: #ffffff !important;
+    border-radius: 20px;
+    padding: 32px 16px;
+    width: 100%;
+    margin: 20px 0px;
+    box-shadow: 0 8px 30px rgba(37, 99, 235, 0.2);
+}
+
+section#ecommerce-services h3 {
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+section#ecommerce-services p {
+    color: rgba(255, 255, 255, 0.85) !important;
+    line-height: 1.7;
+}
+
+section#ecommerce-services .button {
+    background: #fff;
+    color: #0F172A;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#ecommerce-services .button:hover {
+    background: #F8FAFC;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+section#ecommerce-services .col-md-6 {
+    flex: 0 0 auto;
+    width: 49%;
+    margin: 10px 4px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 28px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease;
+}
+
+section#ecommerce-services .col-md-6:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* --- Responsive --- */
+@media (max-width: 751px) {
+    .col-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .entegrasyon-item {
+        width: 49% !important;
+    }
+
+    .entegrasyon-icons {
+        gap: 8px 4px;
+    }
+
+    div#entegrasyon-ozellikler .section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    section#header-entegrasyon {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .row.row-cols-2.justify-content-center.g-5 {
+        padding: 25px 10px 0px 10px;
+    }
+
+    .col-6.dash-sol {
+        margin-top: 17px;
+    }
+
+    .entegrasyon-all {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 6px;
+        margin-top: 20px;
+    }
+
+    .entegrasyon-detail {
+        width: 32%;
+    }
+
+    #dash {
+        padding: 16px 8px;
+        height: 518px;
+    }
+
+    .seo-content {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .seo-icon {
+        display: none;
+    }
+
+    .seo-content ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-align: start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    section#ecommerce-services .col-md-6 {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    section#ecommerce-services {
+        margin: 18px 10px;
+        width: 94%;
+        padding: 20px 14px;
+    }
+
+    section#header-ecommerce {
+        margin: 0px;
+    }
+}

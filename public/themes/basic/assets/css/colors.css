@@ -1,0 +1,23 @@
+:root {
+  --primary_color: 37, 99, 235;
+  --secondary_color: 15, 23, 42;
+  --background_color: 248, 250, 252;
+  --navbar_background_color: 255, 255, 255;
+  --premium_color: 124, 58, 237;
+  --inner_background_color: 255, 255, 255;
+  --elements_background_color: 255, 255, 255;
+  --elements_inner_background_color: 248, 250, 252;
+  --trending_item_badge_color: 217, 119, 6;
+  --sale_item_badge_color: 5, 150, 105;
+  --free_item_badge_color: 79, 70, 229;
+  --premium_item_badge_color: 124, 58, 237;
+  --text_color: 15, 23, 42;
+  --text_muted: 100, 116, 139;
+  --text_green: 30, 41, 59;
+  --border_color: 226, 232, 240;
+  --item_preview_navbar_background: 15, 23, 42;
+  --footer_background_color: 15, 23, 42;
+  --footer_heading_color: 255, 255, 255;
+  --footer_border_color: 30, 41, 59;
+  --footer_text_color: 203, 213, 225;
+}

@@ -118,3 +118,9 @@ php artisan serve
 <b>Developed with ❤️</b><br/>
 <sub>An advanced ecosystem bridging massive APIs & gateways seamlessly.</sub>
 </div>
+
+
+## Contributors
+
+- Tunahan Coşgun — <info@tunahancosgun.dev>
+- Duygu Durmuş — <duygudurmus12@gmail.com>
